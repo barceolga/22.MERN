@@ -1,7 +1,7 @@
 {
   "blueprints": [
     {
-      "name": "arrow-function-s",
+      "name": "arrow-functions-s",
       "description": "Generates a functional react component in shared components using arrow function's syntax",
       "usage": "arrow-function-s [component-name]",
       "files": [
@@ -12,7 +12,7 @@
       ]
     },
     {
-      "name": "arrow-function-m",
+      "name": "arrow-functions-m",
       "description": "Generates a functional react component in a module directory using arrow function's syntax",
       "usage": "arrow-function-m <module-name>/<component-name>",
       "files": [
