@@ -97,6 +97,13 @@ textarea {
     font-style: italic;
 }
 
+.post-action_main {
+    display: flex;
+    justify-content: flex-start;
+}
+.post-action {
+  margin: 10px;
+}
 .post-action a:hover{
     color: #EF5350;
 }
