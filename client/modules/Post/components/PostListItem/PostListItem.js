@@ -21,6 +21,7 @@ function PostListItem(props) {
           <span className={styles['post-action']}><a href="#" onClick={props.onDelete}><FormattedMessage id="deletePost" /></a></span>
           <span className={styles['post-action']}><a href="#" onClick={props.onVoteUp}><FormattedMessage id="thumbUpPost" /></a></span>
           <span className={styles['post-action']}><a href="#" onClick={props.onVoteDown}><FormattedMessage id="thumbDownPost" /></a></span>
+          <span className={styles['post-action']}>< Link to={`/posts/${props.post.slug}-${props.post.cuid}`} onClick={props.onEditPost}><FormattedMessage id="editPost" /></Link></span>
       </div>
       <hr className={styles.divider} />
     </div>
@@ -39,6 +40,7 @@ PostListItem.propTypes = {
   onDelete: PropTypes.func.isRequired,
   onVoteUp: PropTypes.func.isRequired,
   onVoteDown: PropTypes.func.isRequired,
+  onEditPost: PropTypes.func.isRequired,
 };
 
 export default PostListItem;
