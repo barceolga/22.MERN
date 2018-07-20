@@ -9,7 +9,7 @@ import styles from './Home.css';
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div  className={styles['home']}>
         <h2 className={styles['home-title']}>Hello everyone!</h2>
         <p className={styles['home-desc']}>Welcome to my blog. Here you will find some articles and posts.</p>
       </div>
