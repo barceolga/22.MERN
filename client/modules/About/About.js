@@ -9,7 +9,7 @@ import styles from './About.css';
 class About extends Component {
   render() {
     return (
-      <div>
+      <div className={styles['about']}>
         <h2 className={styles['about-title']}>About me</h2>
         <p className={styles['about-desc']}>Nice to meet you. I am a former translator/interpreter who is trying to carve her way into IT world as front-end/full-stack developer.</p>
         <p className={styles['about-desc']}>This blog is about my journey, about all the obstacles I have found on the road, about my discoveries and funny moments and all the experiences alltogether.</p>
