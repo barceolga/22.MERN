@@ -1,0 +1,13 @@
+/* Home styles */
+.home-title {
+  font-size: 35px;
+  font-weight: 600;
+  color: #616161;
+  margin-bottom: 15px;
+}
+
+.home-desc {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+}
