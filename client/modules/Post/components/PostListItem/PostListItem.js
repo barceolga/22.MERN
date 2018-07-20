@@ -18,10 +18,10 @@ function PostListItem(props) {
       <p className={styles['post-desc']}>{props.post.content}</p>
       <p className={styles['post-desc']}>Votes: <span>{props.post.voteCount}</span></p>
       <div className={styles['post-action_main']}>
-          <span className={styles['post-action']}><a href="#" onClick={props.onDelete}><FormattedMessage id="deletePost" /></a></span>
-          <span className={styles['post-action']}><a href="#" onClick={props.onVoteUp}><FormattedMessage id="thumbUpPost" /></a></span>
-          <span className={styles['post-action']}><a href="#" onClick={props.onVoteDown}><FormattedMessage id="thumbDownPost" /></a></span>
-          <span className={styles['post-action']}>< Link to={`/posts/${props.post.slug}-${props.post.cuid}`} onClick={props.onEditPost}><FormattedMessage id="editPost" /></Link></span>
+          <span className={styles['post-action_negative']}><a href="#" onClick={props.onDelete}><FormattedMessage id="deletePost" /></a></span>
+          <span className={styles['post-action_positive']}><a href="#" onClick={props.onVoteUp}><FormattedMessage id="thumbUpPost" /></a></span>
+          <span className={styles['post-action_negative']}><a href="#" onClick={props.onVoteDown}><FormattedMessage id="thumbDownPost" /></a></span>
+          <span className={styles['post-action_positive']}>< Link to={`/posts/${props.post.slug}-${props.post.cuid}`} onClick={props.onEditPost}><FormattedMessage id="editPost" /></Link></span>
       </div>
       <hr className={styles.divider} />
     </div>
